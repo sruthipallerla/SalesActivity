@@ -29,8 +29,8 @@ public class Main {
             DriverManager.registerDriver(new oracle.jdbc.OracleDriver());
             con = DriverManager.getConnection("jdbc:oracle:thin:@144.217.163.57:1521:XE", "sales", "anypw");
             
-            Client client = new Client(con,stm);
-                                       
+            Client cl = new Client(con,stm); //Client Obj
+                   
         } 
         
         catch (SQLException ex){
